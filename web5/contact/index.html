@@ -9,55 +9,120 @@
 		.box {
 			width: 880px;
 			height: 880px;
-			margin: 0 auto;
-			background:black;
-			background-color: rgba(255,255,255,0.4);
-			
+			margin-left: 150px;
+			background: black;
+			background-color: rgba(255, 255, 255, 0.2);
+			float: left;
 		}
 		
 		body {
-			background: url(../img/B2.jpg);
+			background: url(../img_mountains.jpg);
 			background-position: center center;
 			background-repeat: no-repeat;
 			background-attachment: fixed;
 			background-size: cover;
 		}
-		input{
-			margin-left: 150px;
+		
+		input {
 			opacity: 0.6;
 			border: solid white 2px;
+			margin-left: 100px;
 		}
-		input:hover{
+		
+		input:hover {
 			color: cornflowerblue;
 			border-color: #6495ED;
 		}
-		button{
-			
-			text-align:center;
-			font-size:35px;
+		
+		button {
+			text-align: center;
+			font-size: 35px;
 			border: 2px white solid;
-			margin-left: 680px;
+			margin-left: 630px;
 			opacity: 0.6;
 		}
+		
 		button:hover {
 			background-color: ghostwhite;
 			color: cornflowerblue;
 			border-color: #6495ED;
-			
 		}
 		
+		.sidebar {
+			float: left;
+			width: 400px;
+			margin-left: px;
+			height: 500px;
+			background-color: #2c3e50;
+			overflow: hidden;
+			transition: 0.8s all;
+			opacity: 0.6;
+		}
+		
+		.side {
+			margin-left: 0;
+		}
+		/*靠边*/
+		
+		.sidebar ul {
+			margin: 0;
+			padding: 0;
+		}
+		/*去点*/
+		
+		.sidebar ul li {
+			list-style: none;
+		}
+		/*去下划线*/
+		
+		.sidebar ul li a {
+			text-decoration: none;
+			color: white;
+			height: 100px;
+			width: 100%;
+			font-size: 40px;
+			line-height: 100px;
+			text-align: center;
+			display: block;
+			transition: 0.6s all;
+		}
+		
+		.sidebar ul li a:hover {
+			background: #95a5a6;
+		}
 	</style>
 
 	<body>
-		<div class="box">
-	<p style="font-family:'courier new'; font-weight:bold;color: white; font-size: 60px;"align="left">Contact Me</p>
-            
-			<input id="name" name="name" type="text" placeholder="Name" required autofocus style="height: 40px;width: 650px;">
-			<br/>
-			<br/>
-			<br/>
+		</div>
+		<div class="sidebar">
+			<ul>
+				<li>
+					<a style="font-size: 25px; text-align: center;" href="https://chenmingjie6033.github.io/web5/index.html"><b>Principal Sheet</b></a>
+				</li>
+				<li>
+					<a style="font-size: 25px; text-align: center;" href="https://chenmingjie6033.github.io/web5/singer/index.html"><b>My Favorite Singer</b></a>
+				</li>
+				<li>
+					<a style="font-size: 25px; text-align: center;" href="https://chenmingjie6033.github.io/web5/snack/index.html"><b>My Favorite Snack</b></a>
+				</li>
+				<li>
+					<a style="font-size: 25px; text-align: center;" href="https://chenmingjie6033.github.io/web5/contact/index.html"><b>Contact Me</b></a>
+				</li>
+				<li>
+					<a style="font-size: 25px; text-align: center;" href="https://chenmingjie6033.github.io/web5/contact/index.html"><b>Imitation website</b></a>
+				</li>
 
+			</ul>
+		</div>
+		<div class="box">
+			<a style="font-family:'courier new'; font-weight:bold;color: white; font-size: 60px;" align="left">Contact Me</a>
+            <p style="font-size: 20px; color: #000000;">I hope you can give me some Suggestions to improve my skills in making web pages and make better web pages. Thank you very much.</p>
+			<input id="name" name="name" type="text" placeholder="Name" required autofocus style="height: 40px;width: 650px;">
+		   <br />
+		   <br />
+		   <br />
 			<input id="email" name="email" type="email" placeholder="Email" required style="height: 40px;width: 650px;">
+			
 			<br/>
 			<br/>
 			<br/>
@@ -65,8 +130,7 @@
 			<br/>
 			<br/>
 			<br/>
-            <button type="button"><a href="" style="color: white;"></a>Submit</button>
-		</div>
+			<button type="button"><a href="" style="color: white;"></a>Submit</button>
 
 	</body>
 

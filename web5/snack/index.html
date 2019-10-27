@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="utf-8" />
 		<title></title>
 	</head>
 	<style>
-		.box{
+	
+	.box{
 			width: 880px;
-			margin: 0 auto;
+			margin-left: 200px;
 			background:black;
 			background-color: rgba(255,255,255,0.8);
-			
+			float: left;
 		
 		}
 		p{
@@ -31,7 +33,74 @@
 		p{
 			margin-left: 200px;
 		}
+		.sidebar {
+				float: right;
+				width: 400px;
+				margin-left: -300px;
+				height: 500px;
+				background-color: #2c3e50;
+				overflow: hidden;
+				transition: 0.8s all;
+				opacity: 0.6;
+			}
+			
+			.side {
+				margin-left: 0;
+			}
+			/*靠边*/
+			
+			.sidebar ul {
+				margin: 0;
+				padding: 0;
+			}
+			/*去点*/
+			
+			.sidebar ul li {
+				list-style: none;
+			}
+			/*去下划线*/
+			
+			.sidebar ul li a {
+				text-decoration: none;
+				color: white;
+				height: 100px;
+				width: 100%;
+				font-size: 40px;
+				line-height: 100px;
+				text-align: center;
+				display: block;
+				transition: 0.6s all;
+			}
+			
+			.sidebar ul li a:hover {
+				background: #95a5a6;
+			}
+			
 	</style>
+
+	<body>
+		<div class="sidebar">
+				<ul>
+					<li>
+						<a style="font-size: 25px; text-align: center;" href="https://chenmingjie6033.github.io/web5/index.html"><b>Principal Sheet</b></a>
+					</li>
+					<li>
+						<a style="font-size: 25px; text-align: center;" href="https://chenmingjie6033.github.io/web5/singer/index.html"><b>My Favorite Singer</b></a>
+					</li>
+					<li>
+						<a style="font-size: 25px; text-align: center;" href="https://chenmingjie6033.github.io/web5/snack/index.html"><b>My Favorite Snack</b></a>
+					</li>
+					<li>
+						<a style="font-size: 25px; text-align: center;" href="https://chenmingjie6033.github.io/web5/contact/index.html"><b>Contact Me</b></a>
+					</li>
+					<li>
+						<a style="font-size: 25px; text-align: center;" href="https://chenmingjie6033.github.io/web5/contact/index.html"><b>Imitation website</b></a>
+					</li>
+
+				</ul>
+			</div>
+			
+	
 	<body>
 		<div class="box">
 	<p style="font-family:'courier new'; font-weight: bold;color: black; font-size: 60px;"align="left">My Favorite Snack</p>
@@ -46,4 +115,5 @@
 			<img src="img/s4.png" />
 		</div>
 	</body>
+
 </html>

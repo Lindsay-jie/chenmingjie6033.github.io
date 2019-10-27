@@ -1,83 +1,166 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>My Favorite Singer</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
-  <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
-  <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
- 
-  <style>
-  /* Make the image fully responsive */
-  .carousel-inner img {
-      width: 880px;
-    
-      
-  }
-  .box{
-  	width: 880px; 
-  	height: 880px;
-  	margin: 0 auto;
-  }
-  .kong{
-  	        margin: 0 auto;
-			width: 880px;
-			height:130px;
-			visibility: hidden;
-		
-  }
-  body{
-     	    background:url(img/14.jpg);
-		    background-position: center center;
-		    background-repeat: no-repeat;
-		    background-attachment: fixed;
-		    background-size: cover;
-  }
-  p{
-  	text-shadow: darkgray 3px 3px;
-  }
-  </style>
-</head>
-<body>
-	<div class="kong"></div>
-<div class="box">
-	<p style="font-family:'courier new'; font-weight: bold;color: white; font-size: 60px;"align="left">My Favorite Singer</p>
-<p style="font-family:'courier new'; font-weight: bold;color: white; font-size: 50px;"align="left">Rong Hao Li</p>
-<div id="demo" class="carousel slide" data-ride="carousel">
- 
-  <!-- 指示符 -->
-  <ul class="carousel-indicators">
-    <li data-target="#demo" data-slide-to="0" class="active"></li>
-    <li data-target="#demo" data-slide-to="1"></li>
-    <li data-target="#demo" data-slide-to="2"></li>
-   
-  </ul>
- 
-  <!-- 轮播图片 -->
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="img/李2.jpg">
-    </div>
-    <div class="carousel-item">
-      <img src="img/李1.jpg">
-    </div>
-    <div class="carousel-item">
-      <img src="img/李6.png">
 
-    </div>
-  </div>
- 
-  <!-- 左右切换按钮 -->
-  <a class="carousel-control-prev" href="#demo" data-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </a>
-  <a class="carousel-control-next" href="#demo" data-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </a>
- 
-</div>
-</div>
-</body>
+	<head>
+		<title>My Favorite Singer</title>
+		<meta charset="utf-8">
+	  <link rel="stylesheet" href="../style.css">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+		<script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+		<script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+		<style>
+			/* Make the image fully responsive */
+			
+			.carousel-inner img {
+				width: 880px;
+			}
+			.carousel-inner{
+				margin-left: 160px;
+				
+			}
+			.box {
+				width: 880px;
+		
+				margin: 0 auto;
+			}
+			.carousel-control-prev{
+				width: 20px;
+			}
+		
+			
+			body {
+				background: url(img/14.jpg);
+				background-position: center center;
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+				background-size: cover;
+			}
+			
+			p {
+				text-shadow: darkgray 3px 3px;
+				margin-left: 200px;
+			}
+		</style>
+		<style>
+			.sidebar {
+				float: left;
+				width: 400px;
+				margin-left: -300px;
+				height: 500px;
+				background-color: #2c3e50;
+				overflow: hidden;
+				transition: 0.8s all;
+				opacity: 0.6;
+			}
+			
+			.side {
+				margin-left: 0;
+			}
+			/*靠边*/
+			
+			.sidebar ul {
+				margin: 0;
+				padding: 0;
+			}
+			/*去点*/
+			
+			.sidebar ul li {
+				list-style: none;
+			}
+			/*去下划线*/
+			
+			.sidebar ul li a {
+				text-decoration: none;
+				color: white;
+				height: 100px;
+				width: 100%;
+				font-size: 40px;
+				line-height: 100px;
+				text-align: center;
+				display: block;
+				transition: 0.6s all;
+			}
+			
+			.sidebar ul li a:hover {
+				background: #95a5a6;
+			}
+			
+			body {
+				background:url(img/1449.jpg_wh300.jpg);
+				background-position: center center;
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+				background-size: cover;
+			}
+			.carousel-control-prev{
+				margin-left: 300px;
+			}
+			.carousel-control-next{
+				margin-left: 200px;
+			}
+		
+		</style>
+
+	</head>
+
+	<body>
+
+		<div class="box">
+			<div class="sidebar">
+				<ul>
+					<li>
+						<a style="font-size: 25px; text-align: center;" href="https://chenmingjie6033.github.io/web5/index.html"><b>Principal Sheet</b></a>
+					</li>
+					<li>
+						<a style="font-size: 25px; text-align: center;" href="https://chenmingjie6033.github.io/web5/singer/index.html"><b>My Favorite Singer</b></a>
+					</li>
+					<li>
+						<a style="font-size: 25px; text-align: center;" href="https://chenmingjie6033.github.io/web5/snack/index.html"><b>My Favorite Snack</b></a>
+					</li>
+					<li>
+						<a style="font-size: 25px; text-align: center;" href="https://chenmingjie6033.github.io/web5/contact/index.html"><b>Contact Me</b></a>
+					</li>
+					<li>
+						<a style="font-size: 25px; text-align: center;" href="https://chenmingjie6033.github.io/web5/contact/index.html"><b>Imitation website</b></a>
+					</li>
+
+				</ul>
+			</div>
+			<p style="font-family:'courier new'; font-weight: bold;color: white; font-size: 60px;" align="left">My Favorite Singer</p>
+			<p style="font-family:'courier new'; font-weight: bold;color: white; font-size: 50px;" align="left">Rong Hao Li</p>
+			<div id="demo" class="carousel slide" data-ride="carousel">
+
+				
+				</ul>
+
+				<!-- 轮播图片 -->
+				<div class="carousel-inner" style="width: 1200px;">
+					<div class="carousel-item active">
+						<img src="img/李2.jpg">
+					</div>
+					<div class="carousel-item">
+						<img src="img/李1.jpg">
+					</div>
+					<div class="carousel-item">
+						<img src="img/李6.png">
+
+					</div>
+				</div>
+
+				<!-- 左右切换按钮 -->
+				<a class="carousel-control-prev" href="#demo" data-slide="prev">
+					<span class="carousel-control-prev-icon"></span>
+				</a>
+				<a class="carousel-control-next" href="#demo" data-slide="next">
+					<span class="carousel-control-next-icon"></span>
+				</a>
+
+			</div>
+		</div>
+	</body>
+
 </html>
