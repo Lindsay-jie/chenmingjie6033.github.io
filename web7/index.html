@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>天猫购物商城</title>
+	</head>
+
+	<style>
+		body {
+			background-image:url(img/7969901_102604069000_2.jpg);
+		}
+		
+		.head {
+			width: 1000px;
+			height: 140px;
+			margin: 0 auto;
+			padding: 0;
+		}
+		
+		.logo {
+			width: 400px;
+			height: 140px;
+			float: left;
+		}
+		
+		.search {
+			width: 600px;
+			height: 140px;
+			float: left;
+			display: flex;
+		}
+		
+		input {
+			width: 400px;
+			height: 40px;
+			border-color: red;
+			border-width: 3px;
+			margin-top: 50px;
+			/*display: block;*/
+			float: left;
+		}
+		
+		.sleft {
+			width: 300px;
+			height: 140px;
+			float: left;
+		}
+		
+		.box {
+			width: 1200px;
+			height: 900px;
+			margin: 0 auto;
+			padding: 0;
+			display: flex;
+			flex-wrap: wrap;
+		}
+		
+		.box1 {
+			width: 400px;
+			height: 900px;
+			display: flex;
+			flex-wrap: wrap;
+			background-color: white;
+			margin-left: 8px;
+			opacity: 0.8;
+		}
+		
+		.box button {
+			width: 150px;
+			height: 50px;
+			margin-left: 15px;
+			border-color: red;
+			border-width: 2px;
+			margin-top: 10px;
+		}
+		
+		table {
+			border-collapse: collapse;
+			width: 300px;
+			height: 50px;
+			margin-left: 20px;
+		}
+		
+		table,
+		td,
+		th {
+			border: 1px solid black;
+			font-family: "宋体";
+			font-size: medium;
+		}
+		
+		ul {
+			display: block;
+			float: left;
+		}
+		
+		li {
+			list-style: none;
+			font-family: "微软雅黑";
+			font-size: medium;
+			font-weight: bold;
+			margin-right: 20px;
+		}
+		
+		img {
+			margin-left: 30px;
+		}
+		
+		@media only screen and (min-width:1000px) {
+			.box1 {
+				width: 380px;
+				float: left;
+				
+			}
+		}
+		
+		@media only screen and (min-width: 800px) and (max-width: 1000px) {
+			.box1 {
+				width: 350px;
+				
+			}
+		}
+		
+		@media only screen and (min-width: 480px) and (max-width:800px) {
+			.box1 {
+				height: 300px;
+				flex-basis: 70%;
+				
+			}
+			.box1 img {
+				width: 160px;
+			}
+			table {
+				margin-top: 50px
+			}
+		}
+	</style>
+
+	<body>
+		<div class="head">
+			<div class="logo">
+				<img src="img/批注 2019-11-08 173122.jpg" width="250px" style="margin-top: 50px;" />
+			</div>
+			<div class="search">
+				<input type="text" name="search" placeholder="搜索  天猫/商品/品牌/店铺" />
+				<button style="background-color: #FF0000;width: 100px;height: 48px;border-width:2px;border-color:#FF0000;display: block;margin-top: 50px;float: left;"><a style="color: white;font-size: 25px;">搜索</a></button>
+			</div>
+			<div class="box">
+				<div class="box1">
+					<img src="img/牛肉.jpg" width="280px" />
+					<ul>
+						<li style="color: red;font-size: 40px;">¥99.00</li>
+						<li>食品名称: 内蒙古手撕风干牛肉</li>
+						<li>配料表：牛肉、食用盐、味精、香辛料...</li>
+						<li>生产许可证编号：SC10451010500144</li>
+						<li>产品标准号：Q/JJS0001S</li>
+						<li>保质期：270天</li>
+						<li>储藏方法：常温、通风、阴凉干燥处</li>
+					</ul>
+					<table border="1">
+						<tr>
+							<td colspan="3" style="font-weight: bold; font-size: medium;" align="center">营养成分表</td>
+						</tr>
+						<tr align="center" style="font-size:  medium;font-weight: bold;">
+							<td>项目</td>
+							<td>每100克</td>
+							<td>NRV%</td>
+						</tr>
+						<tr align="center" style="font-size:  medium;font-weight: bold;">
+							<td>能量</td>
+							<td>1544千焦</td>
+							<td>18%</td>
+						</tr>
+						<tr align="center" style="font-size: medium;font-weight: bold;">
+							<td>蛋白质</td>
+							<td>72.1克</td>
+							<td>120%</td>
+						</tr>
+						<tr align="center" style="font-size:medium;font-weight: bold;">
+							<td>脂肪</td>
+							<td>7.0克</td>
+							<td>12%</td>
+						</tr>
+						<tr align="center" style="font-size: medium;font-weight: bold;">
+							<td>碳水化合物</td>
+							<td>3.5克</td>
+							<td>1%</td>
+						</tr>
+						<tr align="center" style="font-size: medium;font-weight: bold;">
+							<td>钠</td>
+							<td>1438毫克</td>
+							<td>72%</td>
+						</tr>
+					</table>
+					<button style="background-color: antiquewhite;"><a style="font-family: '微软雅黑';font-size: 20px;color: red;">立即购买</a></button>
+					<button style="background-color: red;"><a style="font-family: '微软雅黑';font-size: 20px;color: white;">加入购物车</a></button>
+				</div>
+				<div class="box1">
+					<img src="img/批注 2019-11-09 131747.jpg" width="280px" />
+
+					<ul>
+						<li style="color: red;font-size: 40px;">¥218.00</li>
+						<li>食品名称: 肖三婆香辣手撕兔 </li>
+						<li>配料表：兔肉、植物油、食用盐、白砂糖...</li>
+						<li>生产许可证编号：SC10315052500181</li>
+						<li>产品标准号：GB 2726</li>
+						<li>保质期：270 天</li>
+						<li>储藏方法: 冷藏保存</li>
+
+					</ul>
+
+					<table border="1">
+						<tr>
+							<td colspan="3" style="font-weight: bold; font-size: x-large;" align="center">营养成分表</td>
+						</tr>
+						<tr align="center" style="font-size: medium;font-weight: bold;">
+							<td>项目</td>
+							<td>每100克</td>
+							<td>NRV%</td>
+						</tr>
+						<tr align="center" style="font-size: medium;font-weight: bold;">
+							<td>能量</td>
+							<td>1374千焦</td>
+							<td>16%</td>
+						</tr>
+						<tr align="center" style="font-size: medium;font-weight: bold;">
+							<td>蛋白质</td>
+							<td>27.5克</td>
+							<td>45%</td>
+						</tr>
+						<tr align="center" style="font-size: medium;font-weight: bold;">
+							<td>脂肪</td>
+							<td>23.5克</td>
+							<td>39%</td>
+						</tr>
+						<tr align="center" style="font-size: medium;font-weight: bold;">
+							<td>碳水化合物</td>
+							<td>2.2克</td>
+							<td>1%</td>
+						</tr>
+						<tr align="center" style="font-size: medium;font-weight: bold;">
+							<td>钠</td>
+							<td>939毫克</td>
+							<td>47%</td>
+						</tr>
+					</table>
+					<button style="background-color: antiquewhite;"><a style="font-family: '微软雅黑';font-size: 20px;color: red;margin-top:20px ;">立即购买</a></button>
+					<button style="background-color: red;"><a style="font-family: '微软雅黑';font-size: 20px;color: white;">加入购物车</a></button>
+				</div>
+
+				<div class="box1">
+					<img src="img/批注 2019-11-10 140624.jpg" width="280px" />
+					<ul>
+						<li style="color: red;font-size: 40px;">¥68.00</li>
+						<li>食品名称: 奇圣牛肉干西藏风干手撕耗牛肉</li>
+						<li>配料表：精选牛肉、盐、白砂糖、鸡精...</li>
+						<li>生产许可证编号：SC10454010100210</li>
+						<li>产品标准号：Q/XQS0006S</li>
+						<li>保质期：180天</li>
+						<li>储藏方法：置于阴凉干燥处</li>
+					</ul>
+					<table border="1">
+						<tr>
+							<td colspan="3" style="font-weight: bold; font-size:medium;" align="center">营养成分表</td>
+						</tr>
+						<tr align="center" style="font-size: medium;font-weight: bold;">
+							<td>项目</td>
+							<td>每100克</td>
+							<td>NRV%</td>
+						</tr>
+						<tr align="center" style="font-size: medium;font-weight: bold;">
+							<td>能量</td>
+							<td>1497千焦</td>
+							<td>16%</td>
+						</tr>
+						<tr align="center" style="font-size: medium;font-weight: bold;">
+							<td>蛋白质</td>
+							<td>74.3克</td>
+							<td>115%</td>
+						</tr>
+						<tr align="center" style="font-size:medium;font-weight: bold;">
+							<td>脂肪</td>
+							<td>7.0克</td>
+							<td>10%</td>
+						</tr>
+						<tr align="center" style="font-size: medium;font-weight: bold;">
+							<td>碳水化合物</td>
+							<td>4.2克</td>
+							<td>1%</td>
+						</tr>
+						<tr align="center" style="font-size: medium;font-weight: bold;">
+							<td>钠</td>
+							<td>1568毫克</td>
+							<td>64%</td>
+						</tr>
+					</table>
+					<button style="background-color: antiquewhite;"><a style="font-family: '微软雅黑';font-size: 20px;color: red;">立即购买</a></button>
+					<button style="background-color: red;"><a style="font-family: '微软雅黑';font-size: 20px;color: white;">加入购物车</a></button>
+				</div>
+			</div>
+
+		</div>
+	</body>
+
+</html>
