@@ -2,103 +2,102 @@
 <html>
 
 	<head>
-		<meta charset="utf-8" />
-		<title>增加减少js操作</title>
-		<style type="text/css">
-			table {
-				border: 1px solid black;
-				border-collapse: collapse;
-				width: 880px;
-			}
-			
+		<meta charset="utf-8">
+		<title>动态的增加表格</title>
+		<style>
 			.div {
 				width: 880px;
 				margin: 0 auto;
 				padding: 0;
-
 			}
-			.head{
+			.div1 {
 				width: 880px;
 				margin: 0 auto;
 				padding: 0;
-				height: 50px;
-
+				height: 100px;
 			}
-			label{
-				display: block;
-				margin-left:100px;
-				float: left;
+			.div2{width: 880px;
+				margin: 0 auto;
+				padding: 0;
+				height: 500px;
 			}
-			input{
-				display: block;
-				float: left;
-				
+			table {
+				border: 1px solid black;
+				border-collapse: collapse;
+				width: 880px;
+				background-color: lavender;
+				text-align: center;
 			}
-			 button{
-			 	display: block;
-			 	margin-left: 100px;
-			 	float: left;
-			 	width: 100px;
-			 	height: 30px;
-			 	background-color: aliceblue;
-			 	border-radius: 10px;
-
-			 }
-			 
+			
 		</style>
+		<script type="text/javascript">
+			function addrow() { //增加表格行的函数
+				var tab = document.getElementById("mytab"); //取得table的节点对象
+				var id = document.getElementsByName("id")[0].value; //取得输入内容
+				var name = document.getElementsByName("name")[0].value; //
+				var tr = document.createElement("tr"); //创建行
+				var tbody = document.createElement("tbody"); //
+				var td_id = document.createElement("td"); //创建列
+				var td_name = document.createElement("td"); //
+				var td_shanchu = document.createElement("td");
+				td_id.appendChild(document.createTextNode(id)); //设置内容
+				td_name.appendChild(document.createTextNode(name)); //
+				td_shanchu.innerHTML = "<a href='#'onclick='del(this);'>删除</a>";
+				tr.appendChild(td_id); //设置子节点
+				tr.appendChild(td_name); //
+				tr.appendChild(td_shanchu);
+				tbody.appendChild(tr); //
+				tab.appendChild(tr); //
+			}
+            
+			function del(obj) {
+				var tr = obj.parentNode.parentNode; //表示从obj里获得td再获得tr
+				tr.parentNode.removeChild(tr);
+			}
+		</script>
 	</head>
 
 	<body>
-		 <div class="head" >
-		<label>学号</label>
-		<input type="number"value="123456789" id="num"/>
-		<label>姓名</label>
-		<input type="text" id="name" value="张三" />
-		<button onclick="zj()"><a style="font-size: medium;">增加</a></button>
-		</div>
-		
-
 		<div class="div">
-			<table border="1" id="table">
-				<tr align="center">
-					<td>姓名</td>
-					<td>学号</td>
-					<td>操作</td>
-				</tr>
-				<!--<tr align="center" style="line-height:50px;">
-					<td>张三</td>
-					<td>123456789</td>
-					<td><a href="#"  onclick="del(this);">删除</a></td>-->
+			<div class="div1">
+				&nbsp;
+				&nbsp;
+				&nbsp;
+				&nbsp;
+				&nbsp;
+				&nbsp;
+				&nbsp;
+				&nbsp;
+				&nbsp;
+				&nbsp;
+				&nbsp;
+				学号：<input type="number" name="id" id="id"> 姓名：
+				<input type="text" name="name">
+				&nbsp;
+				&nbsp;
+				&nbsp;
+				&nbsp;
+				&nbsp;
+				&nbsp;
+				&nbsp;
+				&nbsp;
+				<input type="button" value="增加" onclick="addrow()">
+			</div>
+			<div class="div2">
+				
+				<table id="mytab" border="1">
 
+					<tr align="center">
+						<td>学号</td>
+						<td>姓名</td>
+						<td>操作</td>
+
+					</tr>
+				</table>
+			</div>
 
 		</div>
-        <script type="text/javascript">
-        	function zj(){
-             var table=document.getElementById("table");
-             var tr1=document.createElement("tr");
-             
-             var td1=document.createElement("td");
-             var td2=document.createElement("td");
-             var td3=document.createElement("td");
-                 td3.style.cssText="text-align: center;"
-            
-             
-             td1.innerHTML="<p align='center'>张三</p>";
-             td2.innerHTML="<p align='center'>123456789</p>";
-             td3.innerHTML="<a href='#' onclick='del(this);'>删除</a>"//注意用单引号
 
-              tr1.appendChild(td1);
-              tr1.appendChild(td2);
-              tr1.appendChild(td3);
-
-             table.appendChild(tr1);
-             
-        	}
-        	function del(obj){
-        		var tr=obj.parentNode.parentNode;//表示从obj里获得td再获得tr
-        		tr.parentNode.removeChild(tr);
-        	}
-        </script>
 	</body>
 
 </html>
