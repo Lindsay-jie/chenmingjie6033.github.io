@@ -3,30 +3,35 @@
 
 	<head>
 		<meta charset="utf-8" />
-
 		<title>我们的产品</title>
+		<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+			<link rel="stylesheet" href="../style.css">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+		<script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js">
+		</script>
+		<script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+		<script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				$("button").click(function() {
+					$("#div1").fadeIn(4000);
+					$("#div2").fadeIn(5000);
+					$("#div3").fadeIn(6000);
+				});
+			});
+		</script>
 	</head>
+
 	<style>
-		a {
-				text-decoration: none;
-			}
-			
-			a:hover {
-				color: #FFD700;
-			}
-			
-			img:hover {
-				border: solid yellowgreen;
-			}
-		
-		
 		body {
 			background: url(img/背景.jpg);
 			background-position: center center;
 			background-repeat: no-repeat;
 			background-attachment: fixed;
 			background-size: cover;
-
+			/*opacity: 0.8;*/
 		}
 		
 		.sidebar {
@@ -70,76 +75,35 @@
 	</style>
 
 	<style>
-		.head {
+		.shouye {
 			width: 1000px;
 			overflow: auto;
-			background-color: white;
-			overflow: hidden;
-			transition: 0.8s all;
-			opacity: 0.9;
-		}
-		
-		.content {
-			width: 1000px;
-			height: 3000px;
 			margin: 0 auto;
-			padding: 0;
-			background-color: white;
-			overflow: hidden;
-			transition: 0.8s all;
-			opacity: 0.9;
+			padding: 0px;
 		}
 		
-		.czuobian {
-			width: 650px;
-			float: left;
-			margin-left: 10px;
-			background-color: white;
-			overflow: hidden;
-			transition: 0.8s all;
-			opacity: 0.9;
-		}
-		
-		.czuoyoubian {
-			width: 330px;
-			height: 100%;
+		.paochaji {
+			width: 230px;
+			overflow: auto;
+			/*background: yellowgreen;*/
 			float: left;
 			margin-left: 10px;
 		}
 		
-		.rediantupian {
-			width: 330px;
-			overflow: auto;
-		}
-		
-		.tupian {
-			width: 330px;
+		.chanping {
+			width: 1000px;
 			overflow: auto;
 			float: left;
-			margin-top: 10px;
+			/*background: yellow;*/
 		}
 		
-		.tupian img {
-			float: left;
-		}
-		
-		.chaye {
-			width: 330px;
-			overflow: auto;
-		}
-		
-		.redian {
-			width: 330px;
-			overflow: auto;
-			margin-bottom: 100px;
-		}
 	</style>
 
 	<body>
 		<div class="sidebar">
 			<ul>
 				<li>
-					<a style="font-size: 25px; text-align: center;" href="https://chenmingjie6033.github.io/My%20Business%20Web/index.html"><b>首页</b></a>
+					<a style="font-size: 25px; text-align: center;" href="https://chenmingjie6033.github.io/My%20Business%20Web/index.html"><b>产品简介</b></a>
 
 				</li>
 				<li>
@@ -148,7 +112,7 @@
 				<li>
 					<a style="font-size: 25px; text-align: center;" href="https://chenmingjie6033.github.io/My%20Business%20Web/yongyutiyan.html"><b>用户体验</b></a>
 				</li>
-				
+
 				<li>
 					<a style="font-size: 25px; text-align: center;" href="https://chenmingjie6033.github.io/My%20Business%20Web/contant.html"><b>联系我们</b></a>
 				</li>
@@ -156,137 +120,69 @@
 			</ul>
 
 		</div>
-		<div class="content">
-			<div class="head">
+
+		<div class="shouye" style="background-color: lightcyan;;opacity: 0.9;">
+			<div class="head" style="background-color: lightcyan;">
 				<p style="font-family: '宋体'; font-weight: bold;font-size: 50px;align-content:" align="center">云南一起发财自动泡茶机科技责任有限公司</p>
-
 			</div>
-			<div class="czuobian">
-				<a style="font-size: x-large;font-weight: bold;">前言：</a>
-				</br>
-				<a>茶这种特殊的饮料起源于中国，在古代曾一度成为欧洲皇室炫耀的资本，而中国自古以来又有比较浓厚的饮茶文化，长期的积淀以至于出现吃饭前都得有先喝茶的习惯，甚至岭南一代还将吃早餐直接引申为“饮早茶”，那么对于泡茶而言，我们如何才能浸泡出一壶口感香醇的好茶呢？</a>
-				<img src="img/59e804a0N1c10362c - 副本.jpg" width="600px" height="650px" />
-				<a>不同的茶品在浸泡温度、时间和浸泡水量都不尽相同，作为普通人而言，确实非常难以浸泡出大师级的好口感，也正因如此，市场上才出现另一种特殊的产品——泡茶机。这不仅使普通人能享受到茶水的香醇，同时也成为懒人泡茶的福音。</a>
-				<br />
-				<a style="font-size: x-large;font-weight: bold;">产品的外观与细节：</a><br />
-				<a>TEAMOSA智能泡茶机,产品旨在打造3分钟“一键茶道”的理念，让传统泡茶煮水、灌水和浸泡等多种繁琐操作一气呵成，3分钟即可泡出好茶。</a>
-				<img src="img/5d4ac8e38b8e87004.jpg_e680.jpg" width="650px" />
-				<a>速度很快，只需加入茶叶，并根据不同的茶品而选择不同的泡茶时间和温度，一键泡茶即能自动出茶。如果你不会各种茶品的浸泡时间和温度也无需担心，厂家已经为这款产品提供了一款可供链接使用的智能App，能通过蓝牙或者WIFI对机子进行连接，并提供各种茶品的泡茶参数，在手机上就能对机子进行准确调节，还能根据自己的口感调节成自己喜欢的泡茶参数，操作便捷且人性化。</a>
-				<img src="img/u=4213682952,470799600&fm=26&gp=0.jpg" width="600px" />
-				<a>作为一款家用型产品，它的整体外观由瑞典知名设计师设计而成，全身外壳采用带有磨砂手感的ABS塑料制成，坚固且美观，整机尺寸为直径300mm*高315mm左右，整机功耗约为600W左右。颜值超高哦~</a>
-				<img src="img/5d4ac9450946a3850.jpg_e680.jpg" width="650px" />
-				<a>为避免冲泡茶叶时可能带来的自动出水风险，因此这款泡茶机在出水口对应的竹盘下加装了光感器，一旦感应到光线减弱就会自动出水，如果拿走茶杯则会立即停止放水，提高了产品使用的安全性以及体验感，看起来更加智能。</a>
-				<img src="img/5d4ad3325aa494193.gif_e680.gif" width="650px" />
-				<a>当然，为预防某些问题的出现，因此产品也有自提醒功能，如果在使用中水仓里面没有水，控制面板上便会自动出现ERU的提示。</a>
-				<br />
-				<!--<a style="font-size: x-large;font-weight: bold;">总结：</a>
-				<br />-->
-				<!--<a>优点：产品设计美观大方，中西结合的设计既有中国古韵，也有西式美感，冲泡茶品过程使用极为方便，可视化的双层高硼硅玻璃设计，不仅结实耐用，而且能够直接查看茶品浸泡的好坏，配合人性化的APP使用更能轻松泡出好口感的茶水，而感应出水的设计也让产品的使用更加智能。 缺点：产品使用泡茶温度貌似是设置多少就用多少温度泡茶，而不是先煮沸冷却再浸泡，这样一来，对于没有直接使用自来水厂消毒完全的水，泡茶的茶水则不太干净，这种设计对中国而言，泡茶水设置在低温的情况下，只能选用干净的山泉水或者蒸馏水一类的水质来泡，而且产品所提供的电源线比较短，只能老实选择靠近插座的地方摆放。
-				</a>-->
 
-			</div>
-			<div class="czuoyoubian">
-				<div class="redian" style="margin-top: 40px;">
-					<div class="rediantupian">
-						<a style="color: red;font-size: 22px;">热点新闻</a>
-						<hr style="color: black;" />
-					</div>
-					<div class="xinwen">
-						<div class="tupian">
-							<img src="img/T1.jpg" width="150px" />
-							<p>
-								<a href="http://mini.eastday.com/a/191130134202177-2.html">7战7捷！TA们都是“夜空中最亮的星”</a>
-							</p>
-
-						</div>
-						<div class="tupian">
-							<img src="img/20191130132400_f7678a589d0e7c7c3693727d67f5a0bd_1.jpg" width="150px" />
-							<p>
-								<a href="http://mini.eastday.com/a/191130134004754.html">图文创意引擎ARKIE参与人民网内容科技大赛长三角决赛路演</a>
-							</p>
-						</div>
-						<div class="tupian">
-							<img src="img/t3.jpg" width="150px" />
-							<p>
-								<a href="mini.eastday.com/a/191130121636207.html">全面机考，人工智能准备好了吗？</a>
-							</p>
-						</div>
-						<div class="tupian">
-							<img src="img/20191130121228_4a512f64882f43470e7a86bc728d1ca5_1.jpg" width="150px" />
-							<p>
-								<a href="http://mini.eastday.com/a/191130121228524.html">南京光蓝物联网参与人民网内容科技大赛长三角赛区决赛路演</a>
-							</p>
-						</div>
-						<div class="tupian">
-							<img src="img/t4.jpg" width="150px" />
-							<p>
-								<a href="http://mini.eastday.com/a/191130142359408.html">马栏山论“剑”丨字节跳动张羽：运用平台资源为公益赋能</a>
-							</p>
-						</div>
-
-					</div>
+			<div class="chanping">
+				<div class="paochaji" style="margin-left: 22px;">
+					<img src="img/59e804a0N1c10362c - 副本.jpg" width="230px" />
+					<a>智能泡茶机——都市嗜茶党的福音 与手机app相连，你值得拥有</a>
+					<br />
+					<a style="color: red;font-size: 25px;">¥128</a>
+				</div>
+				<div class="paochaji">
+					<img src="img/59e804a0N1c10362c - 副本.jpg" width="230px" />
+					<a>智能泡茶机——都市嗜茶党的福音 与手机app相连，你值得拥有</a>
+					<br />
+					<a style="color: red;font-size: 25px;">¥128</a>
+				</div>
+				<div class="paochaji">
+					<img src="img/59e804a0N1c10362c - 副本.jpg" width="230px" />
+					<a>智能泡茶机——都市嗜茶党的福音 与手机app相连，你值得拥有</a>
+					<br />
+					<a style="color: red;font-size: 25px;">¥128</a>
 				</div>
 
-				<div class="chaye">
-					<a style="color: red;font-size: 22px;">茶叶的六大种类</a>
-					<hr />
-					<p style="font-weight: bold;font-size: 18px;">红茶:</p>
-					<a>红茶分为祁门红茶、大吉岭红茶、乌巴、阿萨姆红茶等等，具有养胃、抗癌、抗衰老等功效。</a>
-					<img src="img/红茶.jpg" style="width: 300px;" />
-					<p style="font-weight: bold;font-size: 18px;">白茶:</p>
-					<a>白茶因为全身多白毫而得名。白茶包括白毫银针、寿眉、白牡丹等；具有防癌、抗癌、防暑、解毒、治牙痛等功效。</a>
-					<img src="img/白茶.jpg" style="width: 300px;" />
-					<p style="font-weight: bold;font-size: 18px;">绿茶:</p>
-					<a>绿茶包含碧螺春、六安瓜片、龙井等，具有防癌、降脂、减肥等功效。</a>
-					<img src="img/绿茶.jpg" style="width: 300px;" />
-					<p style="font-weight: bold;font-size: 18px;">乌龙茶:</p>
-					<a>乌龙茶包含铁观音、武夷岩茶、白毫乌龙茶等，与绿茶最大的区别在于有没有经过发酵这个过程，采摘的茶叶和采摘的方法恒讲究。</a>
-					<img src="img/乌龙茶.jpg" style="width: 300px;" />
-					<p style="font-weight: bold;font-size: 18px;">黑茶:</p>
-					<a>黑茶是利用微生物发酵以及湿热作用的方式制成的一种茶叶，他的出现距金已经有四百多年的历史。茶叶通过高温烘焙，色泽变得黑褐油润，故称“黑茶”。</a>
-					<img src="img/黑茶.jpg" style="width: 300px;" />
-					<p style="font-weight: bold;font-size: 18px;">黄茶:</p>
-					<a>黄茶包含君山银针、蒙顶黄牙、鹿苑毛尖、海马宫茶等，很适合减肥的人喝，黄茶是属于发酵类的。</a>
-					<img src="img/黄茶.jpg" style="width: 300px;" />
-
+				<div class="paochaji">
+					<img src="img/59e804a0N1c10362c - 副本.jpg" width="230px" />
+					<a>智能泡茶机——都市嗜茶党的福音 与手机app相连，你值得拥有</a>
+					<br />
+					<a style="color: red;font-size: 25px;">¥128</a>
 				</div>
-				<!--热点新闻-->
 
-				<!--<div class="weibo" style="margin-top: 20px;">
-			    	<a style="color: red; font-size: 22px;text-align:left;">微博热搜</a>
-                    <hr style="color: black;" />
-                    <a href="https://s.weibo.com/weibo?q=%23%E5%AD%94%E7%B9%81%E6%A3%AE%E6%AE%89%E8%81%8C25%E5%91%A8%E5%B9%B4%23&Refer=new_time">#孔繁森殉职25周年#</a>
-                    <br />
-                    <br />
-                    <a href="https://s.weibo.com/weibo?q=%23%E9%AB%98%E4%BB%A5%E7%BF%94%E8%80%81%E6%9D%BF%E5%8F%91%E6%96%87%23&Refer=top">#高以翔老板发文#</a>
-                    <br />
-                    <br />
-                    <a href="https://s.weibo.com/weibo?q=%23%E6%9C%B1%E5%B9%BF%E6%9D%83%E6%89%8B%E8%AF%AD%E6%90%AD%E6%A1%A3%E6%8E%A5%E5%8F%97%E9%87%87%E8%AE%BF%23&Refer=top">#朱广权手语搭档接受采访#</a>
-                    <br />
-                    <br />
-                     <a href="https://s.weibo.com/weibo?q=%23%E9%AB%98%E4%BB%A5%E7%BF%94%E6%8A%A2%E6%95%91%E7%8E%B0%E5%9C%BA%E8%A7%86%E9%A2%91%23&Refer=top">#高以翔抢救现场视频#</a>
-                    <br />
-                    <br />
-                    <a href="https://s.weibo.com/weibo?q=%E5%90%90%E6%A7%BD%E5%A4%A7%E4%BC%9A&Refer=top">#吐槽大会#</a>
-                    <br />
-                    <br />
-                    <a href="https://s.weibo.com/weibo?q=%E6%9D%8E%E6%98%93%E5%B3%B0%20%E7%88%B1%E6%88%91%E7%9A%84%E5%A5%B3%E7%94%9F%E6%9C%80%E7%BE%8E&Refer=top">#李易峰 爱我的女生最美#</a>
-                    <br />
-                    <br />
-                    <a href="https://s.weibo.com/weibo?q=%23%E9%AB%98%E4%BB%A5%E7%BF%94%E6%8A%A2%E6%95%91%E7%8E%B0%E5%9C%BA%E8%A7%86%E9%A2%91%23&Refer=top">#高以翔抢救现场视频#</a>
-                    <br />
-                    <br />
-                    <a href="https://s.weibo.com/weibo?q=%23%E9%AB%98%E4%BB%A5%E7%BF%94%E6%8A%A2%E6%95%91%E7%8E%B0%E5%9C%BA%E8%A7%86%E9%A2%91%23&Refer=top">#高以翔抢救现场视频#</a>
-                    <br />
-                    <br />
-                    <a href="https://s.weibo.com/weibo?q=%23%E9%AB%98%E4%BB%A5%E7%BF%94%E6%8A%A2%E6%95%91%E7%8E%B0%E5%9C%BA%E8%A7%86%E9%A2%91%23&Refer=top">#高以翔抢救现场视频#</a>
-                    <br />
-                    <br />
-			    </div>	-->
 			</div>
 
-		</div>
+			<div class="chanping">
+				<div class="paochaji" style="margin-left: 22px;">
+					<img src="img/59e804a0N1c10362c - 副本.jpg" width="230px" />
+					<a>智能泡茶机——都市嗜茶党的福音 与手机app相连，你值得拥有</a>
+					<br />
+					<a style="color: red;font-size: 25px;">¥128</a>
+				</div>
+				<div class="paochaji">
+					<img src="img/59e804a0N1c10362c - 副本.jpg" width="230px" />
+					<a>智能泡茶机——都市嗜茶党的福音 与手机app相连，你值得拥有</a>
+					<br />
+					<a style="color: red;font-size: 25px;">¥128</a>
+				</div>
+				<div class="paochaji">
+					<img src="img/59e804a0N1c10362c - 副本.jpg" width="230px" />
+					<a>智能泡茶机——都市嗜茶党的福音 与手机app相连，你值得拥有</a>
+					<br />
+					<a style="color: red;font-size: 25px;">¥128</a>
+				</div>
 
+				<div class="paochaji">
+					<img src="img/59e804a0N1c10362c - 副本.jpg" width="230px" />
+					<a>智能泡茶机——都市嗜茶党的福音 与手机app相连，你值得拥有</a>
+					<br />
+					<a style="color: red;font-size: 25px;">¥128</a>
+				</div>
+
+			</div>
 		</div>
 	</body>
 
